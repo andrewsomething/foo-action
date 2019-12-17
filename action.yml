@@ -1,12 +1,9 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
-inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+name: 'GitHub Action for DigitalOcean - doctl'
+description: 'Use doctl to manage your DigitalOcean resources.'
+author: 'Andrew Starr-Bochicchio <asb@digitalocean.com>'
+branding:
+  icon: 'droplet'
+  color: 'blue'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.myInput }}
